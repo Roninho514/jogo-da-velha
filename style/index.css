@@ -1,0 +1,436 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #0097E6;
+}
+
+.control-game{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 23%;
+    margin: 10px 0 0 0;
+}
+
+.box-name1{
+    height: 30px;
+    width: 70%;
+    border-radius: 7px;
+    background-color: #ffffff;
+    overflow: hidden;
+    
+}
+
+.box-name2{
+    height: 30px;
+    width: 70%;
+    margin-top: 25px;
+    border-radius: 7px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.name-player1{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 7px 27px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.name-player2{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding:  7px 27px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name-player1::placeholder{
+    color:#0097E6
+}
+
+.text-type{
+    color: #45F391;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.name-player2::placeholder{
+    color: #0097E6;
+}
+
+.button-circle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 92px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px 6px;
+    cursor: pointer;
+    background-color: #0097E6;
+}
+
+.button-circle:hover .circle{
+    right: 6px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    position: absolute;
+    background-color: #ffffff;
+    right: 60%;
+    transition-duration:300ms;
+}
+
+.type-game{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-options{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-options{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 71px;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    margin: 0 30px;
+    cursor: pointer;
+    background-color:transparent;
+    border: 1px solid #ffffff;
+}
+
+.button-options:hover .circle-options{
+    right: 6px;
+}
+
+
+
+.circle-options{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    position: absolute;
+    background-color: #ffffff;
+    right: 65%;
+    transition-duration:300ms;
+}
+
+.button-play{
+    width: 68%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #45F391;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.text-history{
+    color: #ffffff;
+}
+
+.container-history{
+
+    text-align: center;
+    width: 100%;
+}
+
+.list-history{
+    list-style: none;
+    width: 100%;
+}
+
+.line-players{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.box-winner1{
+    margin: 0 0 0 50px;
+    width: 170px;
+    height: 55px;
+    background-color:#ffffff;
+    text-align: center;
+    border-radius: 10px;
+    padding-right: 30px ;
+}
+
+.name-winner{
+    margin: 0 0 0 10px;
+    color: #6A6A6A;
+    font-family:'Lato', sans-serif ;
+}
+
+.winner-text{
+    margin-top: 2px;
+    color: #45F391;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.winner-text{
+    padding: 2px 27px 0 0;
+    box-sizing: border-box;
+}
+
+.cenary-text{
+    margin: 0 0 0 15px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+.box-winner2{
+    margin: 0 0 0 50px;
+    width: 170px;
+    height: 55px;
+    background-color:#ffffff;
+    text-align: center;
+    border-radius: 10px;
+    padding-right: 30px ;   
+}
+
+.button-reset{
+    width: 68%;
+    height: 40px;
+    color: #0097E6;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    margin: 30px 0 0 0;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    
+
+}
+button{
+    cursor: pointer;
+}
+
+
+
+.cenary-play{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 73px;
+    margin-left: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spaces-cenary{
+    width: 22px;
+    height: 22px;
+    border: 1px solid #707070;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #6A6A6A;
+    font-family: 'lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*sesão2*/
+.game{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: #ffffff7a;
+}
+
+.scoreboard{
+    width: 75%;
+    height: 13%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #0097E6;
+}
+
+.text-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+}
+
+.score{
+    margin: 10px 0 10px 0 ;
+    font-size: 17px;
+    font-family: 'lato',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.name-players{
+    font-family: 'lato',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.score-players{
+    font-size: 35px;
+    font-family: 'lato',sans-serif;
+    font-weight: 900;
+}
+
+.gameplay{
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
+    margin-left: 18px;
+    justify-content: space-between;
+    align-items: center;    
+    margin:  15px 0 0 0;
+}
+
+.spaces-play{
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #6A6A6A;
+    font-family: 'lato', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+/*sessão3*/
+
+.container-mensages{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.text-plays{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin: 70px 0 15px 0 ;
+}
+
+.history-plays{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-plays{
+    width: 328px;
+    height: 53px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin: 0 0 10px 0;
+    display: flex;
+
+}
+
+.simbol-play{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lato' sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    color: #6A6A6A;
+}
+
+.text-plays-players{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name{
+    font-family: 'lato' sans-serif;
+    color: #6A6A6A;
+}
+
+.square-play{
+    color: #0097E6;
+}

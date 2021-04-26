@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Jogo da velha</title>
+</head>
+<body>
+    <main class="principal">
+        <section class="control-game">
+            <div class="input-name">
+                <div class="box-name1">
+                    <input type="text" placeholder="Jogador 1" class="name-player1"/>
+                </div>
+                <div class="box-name2">
+                    <input type="text" placeholder="Jogador 2" class="name-player2"/>
+                    <button class="button-circle"><div class="circle"></div></button>
+                </div>
+            </div>
+            <p class="text-type">Tipo de partida</p>
+            <div class="type-game">
+                <div class="options">
+                    <p class="text-options">Melhor de 3</p> 
+                    <button class="button-options"><div class="circle-options"></div></button>
+                    <p class="text-options">Melhor de 5</p>
+                </div>
+                <button class="button-play">Jogar</button>
+            </div>
+            <span class="text-history">Histórico de partida</span>
+            <div class="container-history">
+                <ul class="list-history">
+                    <li class="line-players">
+                        <div class="box-winner1">
+                            <span class="winner-text">Vencedor</span>
+                            <span class="name-winner">Nome do jogador</span>
+                        </div>
+                        <span class="cenary-text">Cenário</span>
+                        <div class="cenary-play">                            
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">X</div>
+                            <div  class="spaces-cenary">X</div>
+                            <div  class="spaces-cenary"></div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">X</div>
+                        </div>
+                    </li>
+                    <li class="line-players">
+                        <div class="box-winner2">
+                            <span class="winner-text">Vencedor</span>
+                            <span class="name-winner">Nome do jogador</span>
+                        </div>
+                        <span class="cenary-text">Cenário</span>
+                        <div class="cenary-play">
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">X</div>
+                            <div  class="spaces-cenary">X</div>
+                            <div  class="spaces-cenary"></div>
+                            <div  class="spaces-cenary">O</div>
+                            <div  class="spaces-cenary">X</div>
+                        </div>
+                </li>
+                </ul>
+            </div>
+            <button class="button-reset">Reniciar</button>
+        </section>
+        <section class="game">
+            <div class="scoreboard">
+                <strong class="score-players">01</strong>
+                <div class="text-score">
+                    <strong class="score">Placar</strong>
+                    <span class="name-players">Nome Jogador</span>
+                </div>
+                <strong class="score-players">01</strong>
+            </div>
+            <div class="gameplay">
+                <div  class="spaces-play">x</div>
+                <div  class="spaces-play">O</div>
+                <div  class="spaces-play"></div>
+                <div  class="spaces-play"></div>
+                <div  class="spaces-play"></div>
+                <div  class="spaces-play"></div>
+                <div  class="spaces-play"></div>
+                <div  class="spaces-play"></div>
+                <div  class="spaces-play"></div>
+            </div>
+        </section>
+
+        <section class="container-mensages">
+            <span class="text-plays">Historico de jogadas</span>
+            <ul class="history-plays">
+                <li class="line-plays">
+                    <div class="simbol-play">O</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">primeiro quadrado</span>
+                    </div>
+                </li>
+                
+                <li class="line-plays">
+                    <div class="simbol-play">X</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">segundo quadrado</span>
+                    </div>
+                </li>
+                
+                <li class="line-plays">
+                    <div class="simbol-play">O</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">primeiro quadrado</span>
+                    </div>
+                </li>
+
+                <li class="line-plays">
+                    <div class="simbol-play">X</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">segundo quadrado</span>
+                    </div>
+                </li>
+
+                <li class="line-plays">
+                    <div class="simbol-play">O</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">primeiro quadrado</span>
+                    </div>
+                </li>
+
+                <li class="line-plays">
+                    <div class="simbol-play">X</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">segundo quadrado</span>
+                    </div>
+                </li>
+
+                <li class="line-plays">
+                    <div class="simbol-play">O</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">primeiro quadrado</span>
+                    </div>
+                </li>
+
+                <li class="line-plays">
+                    <div class="simbol-play">X</div>
+                    <div class="text-plays-players">
+                        <span class="name">Nome do jogador</span>
+                        <span class="square-play">segundo quadrado</span>
+                    </div>
+                </li>
+            </ul>
+            
+        </section>
+    </main>
+</body>
+</html>
